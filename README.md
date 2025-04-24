@@ -60,7 +60,7 @@ A clean, responsive interface with login/register buttons and a featured carouse
 ## 📌 How to Run Locally
 
 1. Clone the repository  
-   `git clone https://github.com/your-username/gyan-kutir.git`
+   `https://github.com/moxikavaghela/gyankutir`
 
 2. Open the project in **Visual Studio**
 
