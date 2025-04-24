@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="admin\Admin_Index.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="dist\sweetalert2.all.js" />
@@ -89,6 +90,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_dashboard.Master.cs">
+      <DependentUpon>admin_dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_dashboard.Master.designer.cs">
+      <DependentUpon>admin_dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Index.aspx.cs">
+      <DependentUpon>Admin_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Index.aspx.designer.cs">
+      <DependentUpon>Admin_Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -115,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gyankutir_Site.Master" />
+    <Content Include="admin\admin_dashboard.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -123,6 +139,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
