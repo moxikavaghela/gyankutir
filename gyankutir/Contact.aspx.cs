@@ -40,12 +40,16 @@ namespace gyankutir
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                Response.Write("<script> alert('Your Data has been successfully submitted.')</script>");
+                //Response.Write("<script> alert('Your Data has been successfully submitted.')</script>");
+                //Response.Write("<script>SuccessContact()</script>");
+                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "SuccessContact()", true);
                 ResetContact();
             }
             else 
             {
-                Response.Write("<script> alert('Your Data has not been submitted.')</script>");
+                //Response.Write("<script> alert('Your Data has not been submitted.')</script>");
+                ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "FailContact()", true);
+                //FailContact()
             }
             con.Close();
         }

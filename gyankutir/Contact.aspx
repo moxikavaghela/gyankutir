@@ -1,6 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/gyankutir_Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="gyankutir.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script type ="text/javascript">
+        function SuccessContact()
+        {
+            Swal.fire({
+                title: "Inserted!",
+                text: "Thanks for contacting us!",
+                icon: "success"
+            });
+        }
+
+        function FailContact() {
+            Swal.fire({
+                title: "Opps!",
+                text: "Please try once again!",
+                icon: "error"
+            });
+        }
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
