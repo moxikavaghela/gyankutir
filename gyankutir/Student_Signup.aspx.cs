@@ -59,7 +59,6 @@ namespace gyankutir
                 cmd.Parameters.AddWithValue("@address", AddressTextBox.Text);
                 cmd.Parameters.AddWithValue("@standard", ClassTextBox.Text);
                 cmd.Parameters.AddWithValue("@goingto", GoingToDropDownList.SelectedItem.ToString());
-                //subject, contactno, tutiontype, tutorprefer, username, password
                 cmd.Parameters.AddWithValue("@subject", SubjectTextBox.Text);
                 cmd.Parameters.AddWithValue("@contactno", ContactTextBox.Text);
                 cmd.Parameters.AddWithValue("@tutiontype", TutionTypeDropDownList.SelectedItem.ToString());
@@ -72,12 +71,12 @@ namespace gyankutir
                 {
                     //Response.Write("<script>alert('Registered successfully')</script>");
                     ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({\r\n  title: \"YEAYY!!\",\r\n  text: \"Now you are our Valuable Member!\",\r\n  icon: \"success\"\r\n});", true);
-                    //ResetContents();
+                    ResetContents();
                 }
                 else
                 {
                     //Response.Write("<script>alert('Registration unsuccessfull...try another username')</script>");
-                    ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({\r\n  title: \"Opps!!\",\r\n  text: \"Sorry Your Registration Failed!\",\r\n  icon: \"error\"\r\n});", true);
+                    ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({\r\n  title: \"Opps!!\",\r\n  text: \"Registration Failed!\",\r\n  icon: \"error\"\r\n});", true);
                 }
             }
             catch(SqlException ex)
@@ -88,14 +87,13 @@ namespace gyankutir
                 }
                 else
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({\r\n  title: \"Opps!!\",\r\n  text: \"Registration Failed!\",\r\n  icon: \"error\"\r\n});", true);
+                    ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({\r\n  title: \"Sorry!!\",\r\n  text: \"We are facing server issues...\",\r\n  icon: \"error\"\r\n});", true);
                 }
             }
 
             finally 
             {
                 con.Close();
-                ResetContents();
             }
         }    
 
