@@ -11,7 +11,17 @@ namespace gyankutir.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["admin_username"] == null)
+            {
+                Response.Redirect("Admin_Login.aspx");
+            }
+            else
+            {
+                //string username = Session["admin_username"].ToString();
+                ////Response.Write("<script> alert('Welcome " + username + "')</script>");
+                ////Response.Write("<script>SuccessContact()</script>");
+                //ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "SuccessContact()", true);
+            }
         }
     }
 }
