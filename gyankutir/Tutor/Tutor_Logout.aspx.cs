@@ -5,17 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace gyankutir.student
+namespace gyankutir.Tutor
 {
-    public partial class Student_Logout : System.Web.UI.Page
+    public partial class Tutor_Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["student_username"] != null)
+            if (Session["tutor_username"] != null)
             {
                 //Session.Abandon();
-                Session["student_username"] = null;
-                Response.Redirect("~/Student_Login.aspx");
+                Session["tutor_username"] = null;
+                Response.Redirect("~/Tutor_Login.aspx");
             }
 
         }
