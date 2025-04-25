@@ -87,6 +87,7 @@
     <Content Include="student\Student_Logout.aspx" />
     <Content Include="Student_Login.aspx" />
     <Content Include="Student_Signup.aspx" />
+    <Content Include="Tutor\Tutor_Index.aspx" />
     <Content Include="Tutor_Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -183,6 +184,20 @@
     <Compile Include="Student_Signup.aspx.designer.cs">
       <DependentUpon>Student_Signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Tutor\Tutor_Dashboard.Master.cs">
+      <DependentUpon>Tutor_Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Dashboard.Master.designer.cs">
+      <DependentUpon>Tutor_Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Index.aspx.cs">
+      <DependentUpon>Tutor_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Index.aspx.designer.cs">
+      <DependentUpon>Tutor_Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tutor_Signup.aspx.cs">
       <DependentUpon>Tutor_Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +211,7 @@
     <Content Include="admin\admin_dashboard.Master" />
     <None Include="packages.config" />
     <Content Include="student\Student_Dashboard.Master" />
+    <Content Include="Tutor\Tutor_Dashboard.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
