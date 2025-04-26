@@ -11,27 +11,27 @@
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>GyanKutir</span></h2>
+                    <p class="animate__animated animate__fadeInUp">Gyan-Kutir is a comprehensive full-stack web application crafted to redefine the way students and tutors connect. By enabling effortless registration, intelligent filtering, real-time communication, and robust administrative control, Gyan-Kutir delivers a seamless, secure, and personalized experience for every user. It aims to simplify tuition class management, ensuring that students find the right mentors and tutors reach their ideal audience with efficiency and ease.</p>
+                    <a href="About.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                    <h2 class="animate__animated animate__fadeInDown">Student Benifits</h2>
+                    <p class="animate__animated animate__fadeInUp">Students benefit from a personalized dashboard where they can search, filter, and connect with tutors based on their specific needs such as subject expertise, preferred learning mode (home tuition or coaching classes), area, gender, and more. Gyan-Kutir makes it easy for students to find the best-suited tutors, improving their learning journey while offering a safe and reliable platform for academic growth.</p>
+                    <a href="Student_Signup.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                    <h2 class="animate__animated animate__fadeInDown">Tutors Advantages</h2>
+                    <p class="animate__animated animate__fadeInUp">For tutors, Gyan-Kutir offers a professional platform to reach a wider pool of students efficiently. Through a secure dashboard, tutors can filter potential students, communicate with them, and grow their teaching practice by showcasing their subject expertise and availability. The system helps tutors enhance their visibility, streamline student interactions, and focus more on delivering quality education.</p>
+                    <a href="Tutor_Signup.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
     <!-- End Hero -->
 
     <!-- ======= Services Section ======= -->
-    <section class="services">
+    <%--<section class="services">
         <div class="container">
 
             <div class="row">
@@ -89,10 +89,57 @@
             </div>
 
         </div>
-    </section>
+    </section>--%>
+
+    <section class="services">
+    <div class="container">
+
+        <div class="row">
+            <!-- Student-Tutor Matching -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+                <div class="icon-box icon-box-pink">
+                    <div class="icon"><i class="bx bx-user"></i></div>
+                    <h4 class="title"><a href="#">Student-Tutor Matching</a></h4>
+                    <p class="description">Smart filtering based on subjects, area, standard, and tuition type to connect students with the best-suited tutors seamlessly.</p>
+                </div>
+            </div>
+
+            <!-- Secure Registration -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box icon-box-cyan">
+                    <div class="icon"><i class="bx bx-lock"></i></div>
+                    <h4 class="title"><a href="#">Secure Registration</a></h4>
+                    <p class="description">Easy and protected registration for students, tutors, and admins with robust authentication and personalized dashboards.</p>
+                </div>
+            </div>
+
+            <!-- Admin Management -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box icon-box-green">
+                    <div class="icon"><i class="bx bx-cog"></i></div>
+                    <h4 class="title"><a href="#">Admin Management</a></h4>
+                    <p class="description">Complete control for administrators to manage users, post important announcements, and handle user feedback and issues effectively.</p>
+                </div>
+            </div>
+
+            <!-- Communication & Feedback -->
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box icon-box-blue">
+                    <div class="icon"><i class="bx bx-chat"></i></div>
+                    <h4 class="title"><a href="#">Communication & Feedback</a></h4>
+                    <p class="description">Integrated messaging and feedback system for students, tutors, and admins to foster better interaction and address concerns promptly.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Services Section -->
+
     <!-- End Services Section -->
 
-    <!-- ======= Why Us Section ======= -->
+<%--    <!-- ======= Why Us Section ======= -->
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
         <div class="container">
 
@@ -202,6 +249,6 @@
 
         </div>
     </section>
-    <!-- End Features Section -->
+    <!-- End Features Section -->--%>
 
 </asp:Content>

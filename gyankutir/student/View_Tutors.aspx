@@ -19,6 +19,23 @@
 
     <div class="row">
 
+        <div class="col-md-12">
+
+            <div class="input-group">
+                <asp:TextBox ID="SearchText" class="form-control" placeholder="Search Tutor" runat="server"></asp:TextBox>
+                <div class="input-group-append">
+                    <button id="SearchBtn" runat="server" onserverclick="SearchBtn_ServerClick" class="btn btn-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
         <asp:Repeater ID="Repeater1" runat="server">
 
             <ItemTemplate>

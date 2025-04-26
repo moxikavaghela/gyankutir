@@ -44,5 +44,37 @@ namespace gyankutir.student
             Repeater1.DataSource = dt;
             Repeater1.DataBind();
         }
+
+        protected void SearchBtn_ServerClick(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(cs);
+            //string query = "select * from tutor_signup where name Like '%"+SearchText.Text+"%'";
+            string query = "SELECT * FROM tutor_signup WHERE " +
+               "name LIKE '%" + SearchText.Text + "%' OR " +
+               "email LIKE '%" + SearchText.Text + "%' OR " +
+               "country LIKE '%" + SearchText.Text + "%' OR " +
+               "city LIKE '%" + SearchText.Text + "%' OR " +
+               "experience LIKE '%" + SearchText.Text + "%' OR " +
+               "contactno LIKE '%" + SearchText.Text + "%' OR " +
+               "qualification LIKE '%" + SearchText.Text + "%' OR " +
+               "degree LIKE '%" + SearchText.Text + "%'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                Repeater1.DataSource = dt;
+                Repeater1.DataBind();
+            }
+            else
+            {
+                Response.Write("<script>alert('No Records Found')</script>");
+                Repeater1.DataSource = null;
+                Repeater1.DataBind();
+            }
+
+        }
     }
 }
