@@ -72,6 +72,8 @@
     <Content Include="admin\Admin_Login.aspx" />
     <Content Include="admin\Admin_Logout.aspx" />
     <Content Include="admin\View_Contact.aspx" />
+    <Content Include="admin\View_Students_Admin.aspx" />
+    <Content Include="admin\View_Tutor_Admin.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="dist\sweetalert2.all.js" />
@@ -86,10 +88,12 @@
     <Content Include="dist\sweetalert2.min.js" />
     <Content Include="student\Student_Index.aspx" />
     <Content Include="student\Student_Logout.aspx" />
+    <Content Include="student\View_Tutors.aspx" />
     <Content Include="Student_Login.aspx" />
     <Content Include="Student_Signup.aspx" />
     <Content Include="Tutor\Tutor_Index.aspx" />
     <Content Include="Tutor\Tutor_Logout.aspx" />
+    <Content Include="Tutor\View_Students.aspx" />
     <Content Include="Tutor_Login.aspx" />
     <Content Include="Tutor_Signup.aspx" />
     <Content Include="Web.config" />
@@ -137,6 +141,20 @@
     <Compile Include="admin\View_Contact.aspx.designer.cs">
       <DependentUpon>View_Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\View_Students_Admin.aspx.cs">
+      <DependentUpon>View_Students_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\View_Students_Admin.aspx.designer.cs">
+      <DependentUpon>View_Students_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\View_Tutor_Admin.aspx.cs">
+      <DependentUpon>View_Tutor_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\View_Tutor_Admin.aspx.designer.cs">
+      <DependentUpon>View_Tutor_Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,6 +198,13 @@
     <Compile Include="student\Student_Logout.aspx.designer.cs">
       <DependentUpon>Student_Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\View_Tutors.aspx.cs">
+      <DependentUpon>View_Tutors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\View_Tutors.aspx.designer.cs">
+      <DependentUpon>View_Tutors.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student_Login.aspx.cs">
       <DependentUpon>Student_Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +239,13 @@
     </Compile>
     <Compile Include="Tutor\Tutor_Logout.aspx.designer.cs">
       <DependentUpon>Tutor_Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor\View_Students.aspx.cs">
+      <DependentUpon>View_Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\View_Students.aspx.designer.cs">
+      <DependentUpon>View_Students.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tutor_Login.aspx.cs">
       <DependentUpon>Tutor_Login.aspx</DependentUpon>

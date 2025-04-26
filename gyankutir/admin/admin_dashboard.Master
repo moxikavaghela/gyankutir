@@ -21,7 +21,7 @@
 <body class="sb-nav-fixed">
     <form id="form1" runat="server">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"Admin Dashboard</a>
+            <a class="navbar-brand" href="Admin_Index.aspx"Admin Dashboard</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <%--<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -37,8 +37,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i><%Response.Write($"Hello {Session["admin_username"]}");%></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#">Settings</a>
-                        <a class="dropdown-item" href="#">Activity Log</a>
+<%--                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>--%>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Admin_Logout.aspx">Logout</a>
                     </div>
@@ -51,11 +51,11 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="Admin_Index.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <%--<div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Layouts
@@ -73,10 +73,10 @@
                                 Pages
                                
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            </a>--%>
+                            <%--<div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">Authentication
+                                    <%--<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">Authentication
                                        
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -99,21 +99,25 @@
                                         </nav>
                                     </div>
                                 </nav>
-                            </div>
+                            </div> --%>
                             <div class="sb-sidenav-menu-heading">Pages</div>
                             <a class="nav-link" href="View_Contact.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 View Contacts
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="View_Tutor_Admin.aspx">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
+                                View Tutors
+                            </a>
+                            <a class="nav-link" href="View_Students_Admin.aspx">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                View Students
                             </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <%Response.Write(Session["admin_username"]);%>
                    
                     </div>
                 </nav>
@@ -129,13 +133,13 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2020</div>
-                            <div>
+                            <div class="text-muted">All Rights Reserved &copy; gyankutir @2025</div>
+                            <%--<div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
                                
                                 <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </footer>
